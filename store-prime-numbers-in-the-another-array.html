@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ar = [23, 34, 54, 10, 4, 7];
+        var br=[];
+        for(var i=0;i<=ar.length-1;i++){
+            var count=0;
+            for(var j=1;j<=ar[i];j++){
+                if(ar[i]%j===0){
+                    count++
+                }
+            }
+            if(count===2){
+                br.push(ar[i])
+            }
+        }
+        console.log(br)
+
+    </script>
+</body>
+
+</html>
